@@ -32906,7 +32906,7 @@ MonoBehaviour:
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 1
-  m_AllowGazeSelect: 1
+  m_AllowGazeSelect: 0
   m_OverrideGazeTimeToSelect: 1
   m_GazeTimeToSelect: 1
   m_OverrideTimeToAutoDeselectGaze: 1
@@ -32983,25 +32983,25 @@ MonoBehaviour:
   m_StartingInteractionStrengthFilters: []
   m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
   m_AngularVelocityScale: 1
   m_TrackPosition: 1
-  m_SmoothPosition: 0
-  m_SmoothPositionAmount: 8
-  m_TightenPosition: 0.1
+  m_SmoothPosition: 1
+  m_SmoothPositionAmount: 1.34
+  m_TightenPosition: 0.068
   m_TrackRotation: 1
-  m_SmoothRotation: 0
-  m_SmoothRotationAmount: 8
-  m_TightenRotation: 0.1
+  m_SmoothRotation: 1
+  m_SmoothRotationAmount: 1.57
+  m_TightenRotation: 0.077
   m_TrackScale: 1
   m_SmoothScale: 0
   m_SmoothScaleAmount: 8
@@ -35041,6 +35041,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2756534561872758013}
     m_Modifications:
+    - target: {fileID: 6196844777378183123, guid: 111bf89cb95e70946853908c3fefc671, type: 3}
+      propertyPath: m_GazeTimeToSelect
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6196844777378183123, guid: 111bf89cb95e70946853908c3fefc671, type: 3}
+      propertyPath: m_AllowGazeInteraction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6196844777378183123, guid: 111bf89cb95e70946853908c3fefc671, type: 3}
+      propertyPath: m_TimeToAutoDeselectGaze
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6196844777378183123, guid: 111bf89cb95e70946853908c3fefc671, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7992415406057659491, guid: 111bf89cb95e70946853908c3fefc671, type: 3}
       propertyPath: m_Name
       value: Gaze Only
@@ -35089,7 +35105,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6196844777378183123, guid: 111bf89cb95e70946853908c3fefc671, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
